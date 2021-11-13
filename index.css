@@ -1,0 +1,120 @@
+/* 通配符 */
+* {
+  color: white;
+  font-weight: 500;
+  font-size: 16px;
+  text-shadow: 2px 2px 2px gray;
+}
+
+@font-face {
+  font-family: "bilifont";
+  src: url(https://s1.hdslb.com/bfs/static/jinkela/international-home/assets/iconfont.woff2);
+}
+
+#font {
+  font-family: "bilifont";
+}
+
+#font::before {
+  content: "\E72D";
+}
+
+/* flex布局 */
+.container {
+  display: flex;
+  list-style: none;
+  align-items: center;
+  justify-content: space-around;
+  height: 4vh;
+  padding-left: 0px!important;
+  /* padding-top: 2px; */
+}
+
+/* . 类选择器 */
+/* # id选择器 */
+#search-button {
+  font-family: "bilifont";
+  height: 31px;
+  border: none;
+  width: 50px;
+  color: #505050;
+  text-shadow: none;
+}
+
+#search-button::before {
+  content: "\E72C";
+}
+
+#avatar {
+  width: 40px;
+  height: 40px;
+  background-color: #cecece;
+  border-radius: 50%;
+}
+
+#avatar-image {
+  width: 45px;
+  height: 45px;
+  border-radius: 50%;
+}
+
+/* 盒子模型 */
+/* padding 内边距 */
+#button {
+  padding-top: 8px;
+  padding-bottom: 8px;
+  padding-left: 35px;
+  padding-right: 35px;
+  background-color: #fb7299;
+  border-radius: 3px;
+}
+
+#header {
+  background-image: url(https://i0.hdslb.com/bfs/archive/49883b2bdeb29dbae3bf80bd702f9d1991aa14ee.jpg);
+  background-attachment: fixed;
+  background-size: contain;
+  height: 17vh;
+  width: 100%;
+  text-shadow: 1px 1px 1px #cecece;
+  padding-top: 1px;
+}
+
+#search-input {
+  color: black;
+  border: none;
+  line-height: 30px;
+  padding-left: 15px;
+  width: 100%;
+  text-shadow: none;
+}
+
+#search {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 25vw;
+}
+
+#homepage {
+  font-family: "bilifont";
+  display: flex;
+  align-items: center;
+}
+
+#homepage::before {
+  content: "\E72B";
+  font-weight: 500;
+  font-size: 18px !important;
+  vertical-align: middle;
+  margin-right: 5px;
+}
+
+#app {
+  font-family: "bilifont";
+  display: flex;
+  align-items: center;
+}
+
+#app::before {
+  content: "\E72D";
+}
