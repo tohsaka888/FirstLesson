@@ -4,7 +4,7 @@
 1. css三种使用方式(外联,内联,元素内)
 1. css盒子模型
 1. css Flex布局
-1. HTML基本标签(`<div>``<span>``<table>``<image>``<form>``<ul>`等)
+1. HTML基本标签(`<div><span><table><image><form><ul>`等)
 1. css常用属性(字体相关,图片相关,背景相关......)
 
 ### 开发环境
