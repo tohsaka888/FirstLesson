@@ -6,6 +6,11 @@
   text-shadow: 2px 2px 2px gray;
 }
 
+html {
+  width: 100%;
+  height: 100%;
+}
+
 @font-face {
   font-family: "bilifont";
   src: url(https://s1.hdslb.com/bfs/static/jinkela/international-home/assets/iconfont.woff2);
@@ -26,7 +31,7 @@
   align-items: center;
   justify-content: space-around;
   height: 4vh;
-  padding-left: 0px!important;
+  padding-left: 0px !important;
   /* padding-top: 2px; */
 }
 
@@ -73,8 +78,9 @@
   background-image: url(https://i0.hdslb.com/bfs/archive/49883b2bdeb29dbae3bf80bd702f9d1991aa14ee.jpg);
   background-attachment: fixed;
   background-size: contain;
-  height: 17vh;
+  height: 18vh;
   width: 100%;
+  box-sizing: border-box;
   text-shadow: 1px 1px 1px #cecece;
   padding-top: 1px;
 }
@@ -117,4 +123,107 @@
 
 #app::before {
   content: "\E72D";
+}
+
+li {
+  cursor: pointer;
+}
+
+.content {
+  margin-left: 10vw;
+  padding: 0px 24px;
+  margin-right: 10vw;
+  background-color: #e7e7e73f;
+  height: 100vh;
+}
+
+.content-first {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-top: 30px;
+}
+
+.content-first-left > img {
+  width: 35vw;
+  border-radius: 10px;
+  margin-right: 10px;
+}
+
+.content-first-right {
+  width: 40vw;
+}
+
+.content-first-right > table {
+  width: 40vw;
+}
+
+.content-first-right > table > tbody > tr > td {
+  width: 30%;
+  text-align: center;
+}
+
+.content-first-right > table > tbody > tr > td > img {
+  width: 98%;
+  border-radius: 5px;
+}
+
+.content-title::before {
+  content: "\E72B";
+}
+
+.content-title {
+  font-family: 'bilifont';
+  font-size: 25px!important;
+  color: black;
+  font-weight: bolder;
+  padding-left: 16px;
+  border-bottom: 2px solid #cecece;
+  padding-bottom: 8px;
+  padding-top: 8px;
+  margin-top: 24px;
+}
+
+#promote {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+#promote > div {
+  width: 19%;
+}
+
+#promote > div > img {
+  width: 100%;
+  height: 150px;
+}
+
+#promote > div > p {
+  color: black;
+  height: 45px;
+  overflow: hidden;
+  text-shadow: none;
+}
+
+#promote-second {
+  display: flex;
+  justify-content: space-around;
+  margin-top: 16px;
+}
+
+#promote-second > div {
+  width: 19%;
+}
+
+#promote-second > div > img {
+  width: 100%;
+  height: 150px;
+}
+
+#promote-second > div > p {
+  color: black;
+  height: 45px;
+  overflow: hidden;
+  text-shadow: none;
 }

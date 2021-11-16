@@ -10,15 +10,15 @@
     <!-- 外联样式表 -->
     <link rel="stylesheet" href="./index.css" />
   </head>
-  <body>
+  <body style="margin: 0px">
     <!-- <span></span> -->
     <div id="header">
       <ul class="container">
         <li id="homepage">主站</li>
-        <li>番剧</li>
-        <li>游戏中心</li>
-        <li>直播</li>
-        <li>会员购</li>
+        <li><a href="https://www.bilibili.com/anime/" target="_blank" style="text-decoration: none;">番剧</a></li>
+        <li><a href="https://game.bilibili.com/platform/" target="_blank" style="text-decoration: none;">游戏中心</a></li>
+        <li><a href="https://live.bilibili.com/" target="_blank" style="text-decoration: none;">直播</a></li>
+        <li><a href="https://show.bilibili.com/platform/home.html?msource=pc_web" target="_blank" style="text-decoration: none;">会员购</a></li>
         <li>漫画</li>
         <li>赛事</li>
         <li>记录片</li>
@@ -43,11 +43,72 @@
         <li>动态</li>
         <li>收藏</li>
         <li>历史</li>
-        <li>创作中心</li>
+        <li><a href="https://www.czu.cn/" target="_blank" style="text-decoration: none;">常州工学院</a></li>
         <li>
           <div id="button">投稿</div>
         </li>
       </ul>
     </div>
+    <div class="content">
+      <div class="content-title">今日推荐视频</div>
+      <div class="content-first">
+        <div class="content-first-left">
+          <img
+            class="content-first-left"
+            src="https://i0.hdslb.com/bfs/feed-admin/9e3d9a3c6c56fc3377fc24f0f6567feb83c26804.png@880w_388h_1c_95q"
+            alt="(つω｀)～睡啦～"
+          />
+        </div>
+        <div class="content-first-right">
+          <table>
+            <tr>
+              <td>
+                <img
+                  src="https://i1.hdslb.com/bfs/archive/649d08cc960a2d4750c30f8e71570f1784ba9eb9.jpg@412w_232h_1c.jpg"
+                  alt="img1"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://i0.hdslb.com/bfs/archive/da424c555f50ddd1a9cf74987bc22029fffcc5ce.jpg@412w_232h_1c.jpg"
+                  alt="img1"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://i0.hdslb.com/bfs/archive/570c2accde0ae2387d983fa225ac4e90b3349f6d.jpg@412w_232h_1c.jpg"
+                  alt="img1"
+                />
+              </td>
+            </tr>
+            <tr>
+              <td>
+                <img
+                  src="https://i1.hdslb.com/bfs/archive/5bf18a222752aa2d3b7e01efb98fd652cb355150.jpg@412w_232h_1c.jpg"
+                  alt="img1"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://i0.hdslb.com/bfs/archive/d7aacec0e28e22c89aad51d51a0cb4049e93c42f.jpg@412w_232h_1c.jpg"
+                  alt="img1"
+                />
+              </td>
+              <td>
+                <img
+                  src="https://i2.hdslb.com/bfs/archive/cfb1cfa13d1107d54051075b190a6d57ddf9bd92.jpg@412w_232h_1c.jpg"
+                  alt="img1"
+                />
+              </td>
+            </tr>
+          </table>
+        </div>
+      </div>
+      <div class="content-title">推广</div>
+      <div id="promote"></div>
+      <div id="promote-second"></div>
+    </div>
   </body>
 </html>
+
+<script src="./index.js"></script>
