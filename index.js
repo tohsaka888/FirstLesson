@@ -105,20 +105,84 @@ cancel.addEventListener("click", () => {
   dialog.style.display = "none";
 });
 
-const login = document.getElementById('login')
-login.addEventListener('click', () => {
-  let user_input = document.getElementById('user_input')
-  let password_input = document.getElementById('password_input')
-  if (user_input.value === 'admin' && password_input.value === '123456') {
-    alert('登录成功')
+const login = document.getElementById("login");
+login.addEventListener("click", () => {
+  let user_input = document.getElementById("user_input");
+  let password_input = document.getElementById("password_input");
+  let radios = document.getElementsByName("radio");
+  let checkboxs = document.getElementsByName("checkbox");
+  console.log(radios);
+  let selectedRadio = "";
+  let checkboxsValue = "";
+  if (radios.length) {
+    for (let i = 0; i < radios.length; i++) {
+      if (radios[i].checked) {
+        selectedRadio += radios[i].value;
+      }
+    }
+  }
+  if (checkboxs.length) {
+    for (let i = 0; i < checkboxs.length; i++) {
+      if (checkboxs[i].checked) {
+        checkboxsValue += checkboxs[i].value;
+      }
+    }
+  }
+  alert(selectedRadio);
+  alert(checkboxsValue);
+  if (user_input.value === "admin" && password_input.value === "123456") {
+    alert("登录成功");
     dialog.style.display = "none";
   } else {
-    alert('登录失败')
+    alert("登录失败");
     dialog.style.display = "none";
   }
-})
+});
 
 const button = document.getElementById("button");
 button.addEventListener("click", createLoginDialog);
 create();
 create_second();
+
+var getDaysOfMonth = function (year, month) {
+  month = month + 1;
+  switch (month) {
+    case 1:
+    case 3:
+    case 5:
+    case 7:
+    case 8:
+    case 10:
+    case 12:
+      return 31;
+    case 4:
+    case 6:
+    case 9:
+    case 11:
+      return 30;
+    case 2:
+      return (year % 4 == 0 && year % 100 != 0) || year % 400 == 0 ? 29 : 28;
+    default:
+      return 0;
+  }
+};
+
+let year = document.getElementById("year");
+let month = document.getElementById("month");
+let run = document.getElementById("run");
+run.addEventListener("click", () => {
+  let result = getDaysOfMonth(parseInt(year.value), parseInt(month.value));
+  console.log(result);
+});
+
+const sum = (end) => {
+  let sum = 0;
+  for (let i = 1; i <= end; i++) {
+    sum += i;
+  }
+  console.log(sum);
+};
+
+console.time("sum");
+sum(10000);
+console.timeEnd("sum");
