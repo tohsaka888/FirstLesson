@@ -227,3 +227,33 @@ li {
   overflow: hidden;
   text-shadow: none;
 }
+
+#favDialog{
+  width: 50vw;
+  height: 35vh;
+  justify-content: center;
+  align-items: center;
+  margin-top: 10vh;
+  border-radius: 10px;
+  box-shadow: 5px 5px 5px gray;
+  padding-bottom: 30px;
+}
+
+.input_area {
+  margin-bottom: 10px;
+  color: black;
+  text-shadow: none;
+}
+
+.input_area > label {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  text-shadow: none;
+}
+
+.input_area > label > input {
+  color: black;
+  text-shadow: none;
+}
